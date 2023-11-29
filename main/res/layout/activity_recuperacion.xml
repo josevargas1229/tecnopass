@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondopantalla"
+    tools:context=".Vista.RecuperacionActivity">
+
+    <Button
+        android:id="@+id/btnEnviarCodigo"
+        style="@style/btnAplication"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/btnEnviarCodigo"
+        android:textColor="#58218F"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCorreo"
+        app:layout_constraintStart_toStartOf="@+id/txtCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+
+    <EditText
+        android:id="@+id/txtCodigo"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="72dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtCodigo"
+        android:inputType="text"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/btnEnviarCodigo"
+        app:layout_constraintStart_toStartOf="@+id/btnEnviarCodigo"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnviarCodigo" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="56dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtCorreo"
+        android:inputType="textEmailAddress"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnValidarCodigo"
+        style="@style/btnAplication"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/btnValidarCodigo"
+        android:textColor="#58218F"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/txtCodigo"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/txtCodigo"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

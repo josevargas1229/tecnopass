@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TecnoPass</string>
+    <string name="imgLogo">logo</string>
+    <string name="txtUsuario">Usuario</string>
+    <string name="txtPassword">Password</string>
+    <string name="btnAcceso">Acceso</string>
+    <string name="imgUser">imgUser</string>
+
+    <string name="imgproducto">imagen</string>
+    <string name="txtNombre">Nombre Producto</string>
+    <string name="txtPrecio">Precio</string>
+    <string name="txtStock">Stock</string>
+    <string name="txtDescripcion">Descripción</string>
+    <string name="btnBuscar">Buscar</string>
+    <string name="btnDetalles">Ver detalles</string>
+    <string name="txtBuscar">Buscar producto</string>
+    <string name="txtProducto">Producto</string>
+    <string name="btnRecuperar">Recuperar contraseña</string>
+    <string name="txtCorreo">Ingrese su correo electrónico</string>
+    <string name="btnEnviarCodigo">Enviar código</string>
+    <string name="txtCodigo">Código de verificación</string>
+    <string name="btnValidarCodigo">Validar código</string>
+    <string name="txtNvaPass">Ingrese su nueva contraseña</string>
+    <string name="txtConfPass">Confirme su nueva contraseña</string>
+    <string name="btnActualizar">Actualizar contraseña</string>
+
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="240dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:cardBackgroundColor="#E48E440B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgproductos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:contentDescription="@string/imgproducto"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ImageContrastCheck"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtNombre"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/txtPrecio"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtPrecio"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/txtNombre"
+                app:layout_constraintStart_toStartOf="@+id/txtNombre"
+                app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+            <TextView
+                android:id="@+id/txtStock"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/txtStock"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/txtPrecio"
+                app:layout_constraintStart_toStartOf="@+id/txtPrecio"
+                app:layout_constraintTop_toBottomOf="@+id/txtPrecio" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="164dp" />
+
+            <Button
+                android:id="@+id/btnDetalles"
+                style="@style/btnAplication"
+                android:layout_width="176dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/btnDetalles"
+                android:textColor="#1914C8"
+                app:layout_constraintEnd_toEndOf="@+id/txtStock"
+                app:layout_constraintStart_toStartOf="@+id/txtStock"
+                app:layout_constraintTop_toBottomOf="@+id/txtStock" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

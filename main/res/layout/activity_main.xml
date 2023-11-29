@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondopantalla"
+    tools:context=".Vista.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="334dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/imgLogo"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        style="?attr/editTextStyle"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtPassword"
+        android:inputType="textPassword"
+        android:text=""
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtUsuario"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txtUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+
+    <Button
+        android:id="@+id/btnAcceso"
+        style="@style/btnAplication"
+        android:layout_marginTop="44dp"
+        android:text="@string/btnAcceso"
+        app:iconTintMode="add"
+        app:layout_constraintEnd_toEndOf="@+id/txtPassword"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/txtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+        app:strokeColor="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/btnRecuperar"
+        style="@style/btnAplication"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/btn_degradado"
+        android:text="@string/btnRecuperar"
+        android:textAllCaps="false"
+        android:textColor="#3428E3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnAcceso"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnAcceso"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcceso" />
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        style="?attr/editTextStyle"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/txtUsuario"
+        android:inputType="text"
+        android:text=""
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="@+id/imgLogo"
+        app:layout_constraintStart_toStartOf="@+id/imgLogo"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
